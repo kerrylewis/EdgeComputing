@@ -5,4 +5,4 @@ from KafkaConsumer import ConsumeMessage
 if __name__ == '__main__':
     parsedReadings = ParseJson().parser()
     ProduceMessage().producer(parsedReadings)
-    ConsumeMessage().consumer()
+    #ConsumeMessage().consumer()
