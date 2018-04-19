@@ -1,5 +1,6 @@
 from kafka import KafkaConsumer
 import json
+import datetime
 
 
 class ConsumeMessage(object):
@@ -11,8 +12,10 @@ class ConsumeMessage(object):
         # print the consumed messages and return array of data
         consumedData = []
         for msg in consumer:
-            #consumedData.append(json.loads(msg.value.decode("utf-8")))
-            print(json.loads(msg.value.decode("utf-8")))
-        print(consumer.metrics())
+           print(json.loads(msg.value.decode("utf-8")))
+           sendTime = datetime.strptime(msg["timestamp"])
+           receiveTime = datetime.datetime.now()
+           latency = receiveTime - sendTime
+           print("Latency:" + latency)
         return consumedData
         # print consumer metrics
