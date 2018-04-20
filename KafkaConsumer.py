@@ -13,7 +13,7 @@ class ConsumeMessage(object):
         consumedData = []
         for msg in consumer:
            print(json.loads(msg.value.decode("utf-8")))
-           sendTime = datetime.strptime(msg["timestamp"], "%Y-%m-%d %H:%M:%S.%f")
+           sendTime = datetime.strptime(msg[9], "%Y-%m-%d %H:%M:%S.%f")
            receiveTime = datetime.now()
            latency = receiveTime - sendTime
            print("Latency:" + latency)
