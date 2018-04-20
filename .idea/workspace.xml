@@ -37,8 +37,8 @@
       <file leaf-file-name="KafkaConsumer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KafkaConsumer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -395,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KafkaConsumer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
