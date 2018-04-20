@@ -7,6 +7,6 @@ from datetime import datetime
 if __name__ == '__main__':
     if str(sys.argv[1]) == "producer":
         parsedReadings = ParseJson().parser()
-        ProduceMessage().producer(parsedReadings, sys.argv[2])
+        ProduceMessage().producer(parsedReadings, float(sys.argv[2]))
     if str(sys.argv[1]) == "consumer":
         ConsumeMessage().consumer()
